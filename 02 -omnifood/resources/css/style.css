@@ -17,14 +17,15 @@ html{
 }
 
 .clearfix{
-    zoom:
+    zoom: 1;
 }
-.clearfix:after{
-    content = '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 /* --------------------------------- */
@@ -108,6 +109,23 @@ h2:after{
     color: #e67e22;
     margin-bottom: 10px;
 }
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+/*
+    line-height: 120%;
+    vertical-align: middle;
+*/
+    margin-top: -5px;
+    
+}
+/* LINKS */
+
 
 /* BUTTONS */
 
@@ -292,3 +310,30 @@ header{
     margin-right: 10px;
 }
 
+
+/* CITIES */
+.section-cities img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+
+.city-feature a:link,
+.city-feature a:active{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+    
+}
+.city-feature a:hover,
+.city-feature a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
