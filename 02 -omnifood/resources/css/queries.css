@@ -56,7 +56,7 @@
         margin: 0 0 4% 0; 
     }
     
-    main-nav{ display: none; }
+    .main-nav{ display: none; }
     
     .long-copy{
         width: 100%;
